@@ -341,3 +341,22 @@ p, li {
 .project-figure-large2 img {
   max-width: 80%;
 }
+
+
+
+/* Remove line from the container */
+.publication-list {
+  border-left: none;
+}
+
+/* Add line per publication */
+.publication-item {
+  border-left: 4px solid #1f5bd8;
+  padding-left: 20px;
+  margin-bottom: 28px;   /* <<< THIS CREATES THE GAP */
+}
+
+/* Optional: lighter style for in-progress papers */
+.publication-item.in-progress {
+  border-left-style: dashed;
+}
