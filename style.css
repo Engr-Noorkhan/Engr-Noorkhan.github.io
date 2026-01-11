@@ -1,0 +1,343 @@
+/* ===================== GLOBAL BASE ===================== */
+html {
+  font-size: 16px;     /* single source of truth */
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;     /* 16px everywhere */
+  line-height: 1.6;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BASE ================= */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Helvetica, Arial, sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.65;
+}
+
+/* ================= CONTAINERS ================= */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.affiliations-wrapper {
+  max-width: 1050px;
+  margin: 30px auto 0;
+  padding: 0 20px;
+}
+
+/* ================= NAV ================= */
+.nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.nav a {
+  padding: 6px 16px;
+  font-size: 14px;
+  color: #1a5cff;
+  text-decoration: none;
+  border-radius: 999px;
+  border: 1.5px solid #c6d8ff;
+  transition: 0.2s ease;
+}
+
+.nav a:hover {
+  background: #edf3ff;
+}
+
+.nav a.active {
+  background: #e6efff;
+  font-weight: 600;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* ================= BIO ================= */
+.bio h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.bio p {
+  max-width: 520px;
+  margin-bottom: 16px;
+}
+
+
+
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* ================= PHOTO ================= */
+.photo img {
+  width: 260px;
+  border-radius: 18px;
+}
+
+/* ================= AFFILIATIONS ================= */
+.affiliations {
+  display: flex;
+  gap: 80px;
+}
+
+/* Titles */
+.affiliation-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.affiliation-title::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #1a5cff;
+  display: block;
+  margin: 8px auto 0;
+}
+
+/* Logo rows */
+.logo-row {
+  display: flex;
+  gap: 32px;
+}
+
+/* Logo box (KEY FIX) */
+.logo-box {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Logos */
+.logo-box img {
+  height: 48px;          /* ⬅️ was 58px */
+  object-fit: contain;
+  margin-bottom: 6px;    /* slightly tighter */
+}
+
+
+/* Country */
+.logo-country {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a5cff;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
+
+.logo-country:hover {
+  text-decoration: underline;
+}
+
+/* Role */
+.logo-role {
+  font-size: 12.5px;
+  color: #555;
+}
+
+
+.links a {
+  color: #1a5cff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-left: 14px;   /* space for dot */
+}
+
+/* Remove dot for first item */
+.links a:first-child {
+  padding-left: 0;
+}
+
+/* Dot before each link */
+.links a:not(:first-child)::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #999;
+}
+
+
+.project-card {
+  margin-top: 40px;
+  padding: 25px;
+  border-left: 4px solid #0056b3;
+  background: #fafafa;
+}
+
+.project-meta {
+  color: #555;
+  font-size: 0.95em;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-figure {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.project-figure img {
+  max-width: 50%;      /* reduce image size */
+  height: auto;        /* keep aspect ratio */
+  display: block;
+  margin: 0 auto;      /* center image */
+}
+
+
+.figure-caption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 8px;
+}
+
+.coming-soon {
+  margin-top: 50px;
+  font-style: italic;
+  color: #777;
+}
+
+
+h1 {
+  font-size: 2rem;     /* ~32px */
+  margin-bottom: 0.6em;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+
+
+/* Project header with links */
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  padding: 6px 12px;
+  border: 1px solid #0056b3;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #0056b3;
+  transition: background 0.2s;
+}
+
+.project-btn:hover {
+  background: #0056b3;
+  color: #fff;
+}
+
+/* Bullet alignment */
+.project-list {
+  margin-left: 20px;   /* moves bullets right */
+  padding-left: 10px;
+}
+
+.project-list li {
+  margin-bottom: 8px;
+}
+
+/* Tools line */
+.tools-line {
+  margin-left: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+
+.publication-list {
+  margin-top: 40px;
+}
+
+.publication-item {
+  padding: 20px;
+  border-left: 4px solid #0056b3;
+  background: #fafafa;
+}
+
+.pub-title {
+  margin-bottom: 8px;
+}
+
+.pub-authors,
+.pub-venue,
+.pub-doi {
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+.pub-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+/* Default project figure (unchanged) */
+.project-figure img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Larger image for Project-2 only */
+.project-figure-large img {
+  max-width: 100%;
+}
+/* Larger image for Project-2 only */
+.project-figure-large2 img {
+  max-width: 80%;
+}

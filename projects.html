@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Noor Khan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+  <!-- Navigation -->
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="research.html">Publications</a>
+    <a href="industry.html">Industry Experience</a>
+    <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+  </div>
+
+  <h1>Selected Projects</h1>
+
+  <!-- ===================================================== -->
+  <!-- PROJECT 1 (PUBLISHED)                                 -->
+  <!-- ===================================================== -->
+  <section class="project-card">
+
+    <div class="project-header">
+      <h2>
+        An Optimal Contingency-Sensitive Inertia and Damping Control  
+        for Grid-Forming Inverters
+      </h2>
+
+      <div class="project-links">
+        <a href="https://ieeexplore.ieee.org/document/11302304"
+           target="_blank"
+           class="project-btn">
+          📄 View Paper
+        </a>
+
+        <a href="https://drive.google.com/file/d/1kvpJFTP--AS3cDSMnrwQzXaAq0_wxcSV/view?usp=sharing"
+           target="_blank"
+           class="project-btn">
+          📊 Download PPT
+        </a>
+      </div>
+    </div>
+
+    <p class="project-meta">
+      <b>Role:</b> Lead Researcher &nbsp;|&nbsp;
+      <b>Platform:</b> RTDS NovaCor &nbsp;|&nbsp;
+      <b>System:</b> IEEE 9-Bus (IBR-only & Hybrid Grid)
+    </p>
+
+    <!-- Image 1 (NORMAL SIZE – unchanged) -->
+    <div class="project-figure">
+      <img src="assets/projects/main_fig16.png"
+           alt="Modified IEEE 9-Bus system">
+      <p class="figure-caption">
+        Modified IEEE 9-Bus system.
+      </p>
+    </div>
+
+    <p class="project-description">
+      This project presents a contingency-aware control framework for
+      grid-forming inverters based on the Virtual Synchronous Machine (VSM)
+      paradigm. Optimal virtual inertia and damping parameters are computed
+      offline for credible contingencies and applied online through smooth
+      continuous-time gain modulation, enabling enhanced frequency stability
+      in low-inertia power systems.
+    </p>
+
+    <h4>Key Contributions</h4>
+    <ul class="project-list">
+      <li>Offline optimization of virtual inertia and damping using Differential Evolution.</li>
+      <li>Local, communication-free real-time contingency detection.</li>
+      <li>Smooth gain transition via continuous-time modulation.</li>
+      <li>RTDS NovaCor validation on inverter-dominated and hybrid grids.</li>
+    </ul>
+
+    <h4>Results &amp; Impact</h4>
+    <ul class="project-list">
+      <li>Significant reduction in frequency nadir and RoCoF.</li>
+      <li>Improved transient stability during inverter disconnection.</li>
+      <li>Outperformed droop, fixed VSM, and adaptive inertia controls.</li>
+    </ul>
+
+    <h4>Tools &amp; Technologies</h4>
+    <p class="tools-line">
+      RTDS NovaCor · IEEE 9-Bus · Grid-Forming Inverters · VSM ·
+      Differential Evolution · Python · MATLAB
+    </p>
+
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- PROJECT 2 (ONGOING / UNDER PROCESS)                   -->
+  <!-- ===================================================== -->
+  <section class="project-card">
+
+    <div class="project-header">
+      <h2>
+        Optimal Adaptive Droop Control with AI-Based Contingency Detection  
+        for Frequency Regulation in Low-Inertia Power Systems
+      </h2>
+
+      <span class="status-badge">Under Process</span>
+    </div>
+
+    <p class="project-meta">
+      <b>Role:</b> Lead Researcher &nbsp;|&nbsp;
+      <b>System:</b> IEEE 39-Bus &nbsp;|&nbsp;
+      <b>Grid Type:</b> Hybrid (Synchronous Generators + IBRs)
+    </p>
+
+    <!-- Image 2 (LARGER SIZE) -->
+    <div class="project-figure-large">
+      <img src="assets/projects/FIg_prc.png"
+           alt="Control system operation.">
+      <p class="figure-caption">
+      <center> Control system operation.</center>
+      </p>
+    </div>
+
+    <p class="project-description">
+This ongoing project develops an adaptive droop control framework for hybrid power
+grids by integrating inverter-based resources with synchronous generators. A
+data-driven AI model enables fast contingency detection and directly triggers
+optimal droop gain allocation for improved frequency regulation.
+
+    </p>
+
+    <h4>Key Contributions</h4>
+    <ul class="project-list">
+      <li>Development of an accurate IEEE 39-bus dynamic model with results validated against RTDS simulations.</li>
+
+      <li>Integration of inverter-based resources to enable hybrid-grid frequency control studies.</li>
+      <li>Design of an AI-based contingency detection model using system-wide electrical measurements.</li>
+      <li>Optimal adaptive droop control with eigenvalue-constrained stability enforcement.</li>
+      <li>Seamless coordination between AI-based event detection and control-layer gain allocation.</li>
+    </ul>
+
+    <h4>Preliminary Results</h4>
+    <ul class="project-list">
+      <li>Substantial reduction in frequency nadir under generator outage and load-step contingencies.</li>
+      <li>Improved RoCoF and faster frequency recovery in hybrid-grid scenarios.</li>
+      <li>Consistent performance across synchronous-only and hybrid (SG + IBR) configurations.</li>
+    </ul>
+
+    <h4>Tools &amp; Technologies</h4>
+    <p class="tools-line">
+      Python · SciPy · Pandapower · RTDS NovaCor ·
+      AI/ML-Based Contingency Detection · Adaptive Droop Control ·
+      IEEE 39-Bus System
+    </p>
+
+  </section>
+
+  <p class="coming-soon">Additional projects will be added soon.</p>
+
+</div>
+</body>
+</html>
