@@ -164,12 +164,107 @@ optimal droop gain allocation for improved frequency regulation.
 
   </section>
 
+  <!-- ===================================================== -->
+  <!-- PROJECT 3 (PREPARED FOR SUBMISSION)                   -->
+  <!-- ===================================================== -->
+  <section class="project-card">
+
+    <div class="project-header">
+      <h2>
+        An Optimal Adaptive Control for VSM-Based Grid-Forming Inverters
+      </h2>
+
+      <span class="status-badge">Prepared for Submission</span>
+    </div>
+
+    <p class="project-meta">
+      <b>Venue:</b>
+      <b>
+        <a href="https://edm.ieeesiberia.org/" target="_blank" rel="noopener noreferrer">
+          IEEE EDM 2026
+        </a>
+      </b>
+      &nbsp;|&nbsp;
+      <b>Platform:</b> RTDS NovaCor + dSPACE MicroLabBox-II &nbsp;|&nbsp;
+      <b>Real-Time I/O:</b> GTAI / GTAO
+    </p>
+
+    <p class="project-description">
+      The large-scale integration of inverter-based resources (IBRs) has led to an increase in
+      power system stability issues in modern power grids. Large frequency nadirs are quite common
+      in inverter-dominated grids, especially following major contingency events, which often lead
+      to cascading failure or even a blackout. However, with control methodologies such as the
+      virtual synchronous machine (VSM), which allows inverters to emulate the dynamics of an actual
+      synchronous generator, it is possible to improve grid stability even with large IBR penetration.
+      This project presents a novel adaptive droop control framework for VSM-based grid-forming (GFM)
+      inverters through a virtual governor to allow optimal control action during credible contingency
+      events such as the disconnection of a major generator or an inverter. The proposed control is
+      tested using hardware-in-the-loop (HIL) with the Real-Time Digital Simulator (RTDS) Novacore and
+      the dSPACE MicroLabBox-II where real-time signal exchange is performed through GTAI/GTAO cards.
+      Tests are conducted both in a grid solely containing inverters and a grid with synchronous
+      generators. The results show improved frequency nadir, settling time, and steady-state frequency
+      deviation compared to the VSM controller without a virtual governor and the controller with a
+      governor but with fixed droop settings.
+    </p>
+
+    <h4>Figures</h4>
+
+    <!-- Figure: Experimental setup -->
+    <div class="project-figure">
+      <img src="assets/Projects/experimental_setup_adaptive_droop_vsm.pdf"
+           alt="Experimental setup for adaptive droop VSM (HIL)">
+      <p class="figure-caption">
+        Experimental setup for the adaptive droop VSM-based controller (HIL).
+      </p>
+    </div>
+
+    <!-- Figure: Real-time control setup -->
+    <div class="project-figure">
+      <img src="assets/Projects/real_time_control_setup.pdf"
+           alt="Real-time control setup (RTDS NovaCor and dSPACE MicroLabBox-II)">
+      <p class="figure-caption">
+        Real-time control setup showing RTDS NovaCor ↔ dSPACE MicroLabBox-II signal exchange via GTAI/GTAO.
+      </p>
+    </div>
+
+    <!-- Figure: Updated VSM control -->
+    <div class="project-figure">
+      <img src="assets/Projects/updated_VSM_control.pdf"
+           alt="Updated VSM control with virtual governor and adaptive droop">
+      <p class="figure-caption">
+        Updated VSM control structure with virtual governor and adaptive droop framework.
+      </p>
+    </div>
+
+    <!-- Figure: Modified IEEE 9-bus system -->
+    <div class="project-figure">
+      <img src="assets/Projects/modified_ieee_9_bus_system.pdf"
+           alt="Modified IEEE 9-bus system used for validation">
+      <p class="figure-caption">
+        Modified IEEE 9-bus system used for validation in inverter-only and hybrid grid scenarios.
+      </p>
+    </div>
+
+    <h4>Key Contributions</h4>
+    <ul class="project-list">
+      <li>Proposed an adaptive droop control framework for VSM-based GFM inverters via a virtual governor.</li>
+      <li>Enabled optimal control action during credible contingencies (major generator or inverter disconnection).</li>
+      <li>Validated in real time using RTDS NovaCor and dSPACE MicroLabBox-II with GTAI/GTAO signal exchange.</li>
+      <li>Tested across inverter-only and hybrid grids (with synchronous generators).</li>
+      <li>Demonstrated improved frequency nadir, settling time, and steady-state frequency deviation versus fixed-gain approaches.</li>
+    </ul>
+
+    <h4>Tools &amp; Technologies</h4>
+    <p class="tools-line">
+      RTDS NovaCor · dSPACE MicroLabBox-II · GTAI/GTAO ·
+      Grid-Forming Inverters · VSM · Virtual Governor · Adaptive Droop Control ·
+      HIL Testing
+    </p>
+
+  </section>
+
   <p class="coming-soon">Additional projects will be added soon.</p>
 
 </div>
 </body>
 </html>
-
-
-
-
